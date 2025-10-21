@@ -21,6 +21,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden; /* Prevents horizontal scroll on the whole page */
 }
 
 .container {
@@ -150,6 +151,8 @@ body {
     padding: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    position: relative; /* <-- KEY CHANGE 1 */
+    height: 400px;     /* <-- KEY CHANGE 2 */
 }
 
 .chart-container h3 {
