@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susiri MVP Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Susiri</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Welcome, Sri Lankan SME!</h1>
+                <p>Your Sustainability Overview - October 2025</p>
+            </header>
+
+            <!-- Key Metrics Cards -->
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Carbon Footprint</h3>
+                    <p class="metric">12.5 tCO₂e</p>
+                    <span class="change negative">-5.2% vs last month</span>
+                </div>
+                <div class="card">
+                    <h3>Water Usage</h3>
+                    <p class="metric">8,200 m³</p>
+                    <span class="change positive">+1.8% vs last month</span>
+                </div>
+                <div class="card">
+                    <h3>Waste Generated</h3>
+                    <p class="metric">450 kg</p>
+                    <span class="change negative">-10% vs last month</span>
+                </div>
+                <div class="card">
+                    <h3>Energy Consumption</h3>
+                    <p class="metric">15,000 kWh</p>
+                    <span class="change negative">-3.5% vs last month</span>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Monthly Carbon Emissions (tCO₂e)</h3>
+                    <canvas id="carbonChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Energy Mix (%)</h3>
+                    <canvas id="energyMixChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Recommendations Section -->
+            <div class="recommendations-container">
+                <h2>AI-Powered Recommendations</h2>
+                <div class="recommendation-list">
+                    <div class="recommendation-item">
+                        <span class="icon">💡</span>
+                        <div class="rec-text">
+                            <h4>Switch to Solar</h4>
+                            <p>You could save an estimated LKR 50,000/month on energy bills by installing solar panels.</p>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <span class="icon">🚚</span>
+                        <div class="rec-text">
+                            <h4>Optimize Logistics</h4>
+                            <p>Your primary transport route is 15% less efficient than the industry average. Consider an alternative.</p>
+                        </div>
+                    </div>
+                    <div class="recommendation-item">
+                        <span class="icon">♻️</span>
+                        <div class="rec-text">
+                            <h4>Reduce Packaging Waste</h4>
+                            <p>Explore using biodegradable materials from a local supplier in Gampaha to reduce plastic waste by 30%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
